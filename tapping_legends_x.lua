@@ -1,4 +1,4 @@
-local lovelib = loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/lovelib/main/lovelibbeta.lua",true))()
+local lovelib = loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/lovelib/main/lovelibbetav3.lua",true))()
 local gui = lovelib:new()
 
 local Farming = gui:newpage("Farming")
