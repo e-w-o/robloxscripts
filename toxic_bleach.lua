@@ -2,6 +2,17 @@ local lovelib = loadstring(game:HttpGet(game:HttpGet("https://raw.githubusercont
 local gui = lovelib:new()
 
 
+local Main = gui:newpage("Main")
+Main:addlabel("Toxic Bleach")
+
+local jumpbypass = nil
+Main:addcheckbox("Jump cooldown bypass",false,function(b)
+    if b then
+        game:GetService("Players").LocalPlayer.Character.JumpCooldown:Destroy()
+    end
+end)
+
+
 local Soul = gui:newpage("Soul Reaper")
 Soul:addlabel("Toxic Bleach")
 
