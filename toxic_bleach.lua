@@ -261,7 +261,7 @@ TP:addlabel("Toxic Bleach")
 local tp = nil
 TP:addcheckbox("Portal Teleport",false,function(b)
     if b then
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(375.45220947265625, 21.42998504638672, 1386.2452392578125)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-372.95086669921875, -299.3075256347656, -298.79205322265625)
     end
 end)
 
