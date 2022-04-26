@@ -12,6 +12,13 @@ Main:addcheckbox("Jump cooldown bypass",false,function(b)
     end
 end)
 
+local godmode = nil
+Main:addcheckbox("God mode",false,function(b)
+    if b then
+        game:GetService("ReplicatedStorage").Remotes.GameRemotes.RequestKnock:Destroy()
+end
+end)
+
 
 local Soul = gui:newpage("Soul Reaper")
 Soul:addlabel("Toxic Bleach")
