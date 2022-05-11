@@ -13,7 +13,7 @@ local localtab = win:Tab('Local')
 local tptab= win:Tab('Teleports')
 local uitab = win:Tab('UI')
 
-maintab:Button('Cooldown Bypass',function(b)
+maintab:Button('Attack Cooldown Bypass',function(b)
     game:GetService("ReplicatedStorage").SharedModules.CooldownModule:Destroy()
 end)
 
