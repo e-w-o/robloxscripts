@@ -28,7 +28,7 @@ syn.request(
 
 getgenv().Toggled=false
 getgenv().KeyBind="P"
-getgenv().Delay=0.6
+getgenv().Delay=1
 local UIS=game:GetService'UserInputService'
 
 local function Source()
