@@ -28,7 +28,7 @@ syn.request(
 
 getgenv().Toggled=false
 getgenv().KeyBind="P"
-getgenv().Delay=1
+getgenv().Delay=0.6
 local UIS=game:GetService'UserInputService'
 
 local function Source()
@@ -68,6 +68,10 @@ local function bomb(tableincrease, tries)
      table.insert(maintable, spammedtable)
  end 
 
+ for i = 1, tries do
+    game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+ end
+end
  for i = 1, tries do
     game.RobloxReplicatedStorage.UpdatePlayerBlockList:FireServer(maintable)
  end
